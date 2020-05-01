@@ -22,7 +22,7 @@
 
 using namespace std;
 
-int main()
+void cdk()
 {
   WINDOW *window;
   CDKSCREEN	*cdkscreen;
@@ -40,7 +40,6 @@ int main()
    */
   window = initscr();
   cdkscreen = initCDKScreen(window);
-
   /* Start CDK Colors */
   initCDKColor();
 
@@ -99,5 +98,4 @@ int main()
   drawCDKMatrix(myMatrix, true);
   sleep (10);
   endCDK();
-  return 0;
 }
